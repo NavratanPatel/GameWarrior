@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BGMI Tournament Registration</title>
+  <link rel="stylesheet" href="reg.css">
+  <script src="reg.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <div class="half-page bgmi-image">
+    <img src="/images/b1.jpg" alt="BGMI Image" class="img-fluid">
+  </div>
+  <div class="half-page registration-form">
+    <h2 class="text-center">BGMI Tournament Registration</h2>
+    <form id="registrationForm">
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="mobile">Mobile Number:</label>
+      <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required>
+
+      <label for="username">In-Game Username:</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="teamname">Team Name:</label>
+      <input type="text" id="teamname" name="teamname" required>
+
+      <div id="teamMembers">
+        <label>Team Members:</label>
+        <div id="memberContainer">
+          <input type="text" class="memberInput" name="teamMember[]" required>
+        </div>
+        <button type="button" id="addMemberBtn">Add Team Member</button>
+      </div>
+
+      <label for="captain">Captain of the Team:</label>
+      <input type="text" id="captain" name="captain" required>
+
+      <label for="city">City:</label>
+      <input type="text" id="city" name="city" required>
+
+      <label for="region">Region:</label>
+      <select id="region" name="region" required>
+        <option value="">Select Region</option>
+        <option value="Asia">Asia</option>
+        <option value="Europe">Europe</option>
+        <option value="North America">North America</option>
+        <option value="South America">South America</option>
+        <option value="Africa">Africa</option>
+        <option value="Oceania">Oceania</option>
+      </select>
+
+      <div id="qrCodeSection">
+        <label for="qrCode">Payment QR Code:</label>
+        <img id="qrCode" src="/images/Screenshot 2023-11-18 153711.png" alt="QR Code Preview" style="display:none; max-width: 100%;">
+      </div>
+
+      <label for="paymentQR">Upload Payment QR Code:</label>
+      <input type="file" id="paymentQR" name="paymentQR" accept="image/*">
+
+      <input type="submit" value="Register">
+    </form>
+  </div>
+</div>
+
+<script src="reg.js"></script>
+</body>
+</html>

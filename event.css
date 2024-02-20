@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .event-container {
+    background-color: #F4CE14;
+    /* background-image: url("img/recent-game/event_bk.jpg"); */
+  }
+  .event-heading {
+    margin: 0;
+    padding: 20px 0 0 20px;
+  }
+  .event-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 10px; /* here */
+    background-color: #F4CE14;
+    /* background-image: url("img/recent-game/event_bk1.jpg"); */
+  }
+  .event-card {
+    margin: 10px 0;
+    padding-bottom: 20px;
+    text-align: center;
+    background-color: #ecf4e6;
+    border-radius: 10%;
+    /* border: 2px solid #aaaaaa; */
+    box-shadow: 0px 4px 8px black;
+  }
+
+  .event-card img{
+    border-radius: 10% 10% 0 0;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+
+  button a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  .event-card:hover {
+    border-radius: 10%;
+    background-color: rgb(255, 255, 112);
+    box-shadow: 0px 8px 15px black;
+  }
+  .event-card:hover button {
+    transform: scale(1.3);
+  }
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    bottom: 0;
+  }
+  

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="login.css" />
+    <link href="img/favicon.ico" rel="shortcut icon" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/owl.carousel.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <title>Login Page</title>
+  </head>
+  <body>
+    <header
+      style="position: absolute; top: 0px; width: 100%"
+      class="header-section"
+    >
+      <div class="container">
+        <!-- logo -->
+        <a class="site-logo" href="index.html">
+          <img src="img/logo.png" alt="" />
+        </a>
+        <div class="user-panel">
+          <a href="login.html">Login</a> / <a href="signup.html">Register</a>
+        </div>
+        <!-- responsive -->
+        <div class="nav-switch">
+          <i class="fa fa-bars"></i>
+        </div>
+        <!-- site menu -->
+        <nav class="main-menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="review.html">Games</a></li>
+            <li><a href="event.html">Events</a></li>
+            <li><a href="categories.html">Blog</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="login-container">
+      <form
+        class="login-form"
+        action="http://localhost:3001/profile.html"
+        method="post"
+      >
+        <h2>Login</h2>
+        <label for="email">Email-ID:</label>
+        <input type="email" id="email" name="emailid" required />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="passwd" required />
+
+        <button type="submit">Login</button>
+        <p style="margin-top: 15px; color: red">Invalid Details!</p>
+      </form>
+    </div>
+  </body>
+</html>

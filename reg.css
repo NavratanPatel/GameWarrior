@@ -1,0 +1,103 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #fff;
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  .half-page {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .bgmi-image {
+    background-color: #1a1a1a;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .bgmi-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .registration-form {
+    padding: 50px;
+  }
+  
+  .registration-form h2 {
+    margin-top: 0;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input,
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #666;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Focus styles */
+  input:focus,
+  select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px #007bff;
+  }
+  
+  #teamMembers {
+    margin-bottom: 20px;
+  }
+  
+  #memberContainer {
+    margin-bottom: 10px;
+  }
+  
+  .memberInput {
+    width: calc(100% - 100px);
+  }
+  
+  #addMemberBtn {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 4px;
+  }
+  
+  #addMemberBtn:hover {
+    background-color: #218838;
+  }
+  
+  #qrCodeSection {
+    margin-bottom: 20px;
+  }
+  

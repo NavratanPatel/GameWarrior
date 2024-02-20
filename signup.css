@@ -1,0 +1,114 @@
+/* Basic Styling */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0px;
+  background-image: url(img/review-bg-2.jpg);
+}
+
+.container-form {
+  max-width: 500px;
+  margin: 2rem auto auto auto;
+  background-color: #e3ebf1;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+p {
+  text-align: center;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* Form Styling */
+form {
+  padding: 20px;
+  background-color: #fff;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.form-group {
+  flex: 1;
+  margin-right: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  /* font-weight: bold; */
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+select {
+  appearance: none;
+  background-color: #fff;
+}
+
+button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Spacing and Margins */
+.spacer {
+  margin-left: 20px; /* Add space between form groups */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+  margin-bottom: 10px; /* Add space between input fields */
+}
+
+label,
+button {
+  margin-bottom: 5px; /* Add space around labels and button */
+}
+
+/* Accessibility */
+input:focus,
+select:focus {
+  outline: 2px solid #3498db;
+}
+.button-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+::placeholder {
+  opacity: 70%;
+}
+form i {
+  margin-left: 90%;
+  position: relative;
+  top: -42%;
+  cursor: pointer;
+}

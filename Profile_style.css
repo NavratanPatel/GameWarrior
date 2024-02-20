@@ -1,0 +1,136 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+.profile-container {
+  display: flex;
+  transition: all 0.3s ease; /* Add transition for smooth animation */
+  margin: 0px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-picture {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-picture img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.profile-img-con{
+  margin-top: 35px;
+}
+
+.user-info {
+  display: flex;
+  justify-content:flex-start;
+  margin-top: 10px;
+  margin-left: 50px;
+  text-align: center;
+}
+
+hr {
+  border: 1px solid #ddd;
+  margin: 20px 0;
+}
+
+.menu-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.menu-toggle,
+.menu-close {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.vertical-menu {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 220px; /* Adjusted width to accommodate new menu items */
+  background-color: #fff;
+  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.menu-item {
+  cursor: pointer;
+  text-decoration: none;
+  color: #333;
+  margin-bottom: 10px;
+  padding: 12px;
+  justify-content: center;
+}
+
+.menu-item:hover {
+  background-color: #e7e4e4;
+  border-radius: 5px;
+}
+
+.content-sections {
+  flex-grow: 1;
+  padding: 0 20px;
+}
+
+.post-section,
+.discover-section,
+.friend-list-section,
+.notice-section {
+  display: none;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.post-button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.friend-list,
+.discover-list,
+.notice-list {
+  list-style: none;
+  padding: 0;
+}
+
+.friend-list-item,
+.discover-list-item,
+.notice-list-item {
+  margin-bottom: 10px;
+}
+
+.pageContainer {
+  background-color: #333;
+}
